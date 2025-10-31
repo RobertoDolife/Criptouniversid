@@ -1,0 +1,356 @@
+/* ========= CONFIGURAÇÕES GLOBAIS (Dark Mode) ========= */
+:root {
+    --primary-color: #007bff; /* Azul Cripto */
+    --primary-hover: #0056b3;
+    --dark-color-bg: #121212; /* Fundo escuro principal */
+    --dark-color-alt: #1e1e1e; /* Fundo alternado */
+    --text-color: #f4f4f4; /* Texto claro */
+    --text-color-muted: #aaa;
+    --header-height-desktop: 80px; /* Altura do Header no Desktop */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--dark-color-bg); 
+    color: var(--text-color); 
+    line-height: 1.6;
+}
+
+/* ======== CONTAINER ======== */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* ======== TIPOGRAFIA ======== */
+h1 { font-size: 2.2rem; font-weight: 900; line-height: 1.2; }
+h2 { font-size: 2rem; text-align: center; margin-bottom: 1.5rem; color: var(--primary-color); }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+
+p {
+    font-size: 1rem;
+    max-width: 800px;
+    margin: 0 auto 1.5rem auto;
+}
+
+/* ======================================================== */
+/* ========= HEADER (CABEÇALHO E MENU) - CORRIGIDO ========= */
+/* ======================================================== */
+
+.main-header {
+    background-color: var(--dark-color-alt); 
+    padding: 1rem 0;
+    border-bottom: 2px solid var(--primary-color); 
+    position: static;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+}
+
+.main-header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+/* --- Scroll horizontal no menu (mobile) --- */
+.main-header .container nav {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 10px;
+}
+
+.main-header .container nav::-webkit-scrollbar {
+    display: none;
+}
+.main-header .container nav {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* --- MENU --- */
+.main-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+.main-nav li {
+    margin: 0 0.5rem;
+    flex-shrink: 0;
+}
+
+.main-nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 8px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: var(--primary-color);
+    background-color: rgba(255,255,255, 0.05);
+}
+
+/* ======================================================== */
+/* ================== FIM DO HEADER CORRIGIDO ============= */
+/* ======================================================== */
+
+/* ========= SEÇÕES GERAIS ========= */
+.content-section {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.content-section.alt-bg {
+    background-color: var(--dark-color-alt);
+}
+
+/* ========= SEÇÃO HOME (HERO) ========= */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('crypto-bg.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.hero h1, .hero p {
+    color: var(--text-color);
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin: 1.5rem auto 2.5rem;
+}
+
+/* ========= BOTÕES ========= */
+.btn-cta {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.btn-cta:hover {
+    background-color: var(--primary-hover);
+    transform: scale(1.05);
+}
+
+/* ========= GRIDS ========= */
+.values-grid,
+.team-grid {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.value-item,
+.team-member {
+    background: var(--dark-color-bg); 
+    padding: 2.5rem 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #222;
+}
+
+.value-item i, .team-member i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.value-item h4, .team-member h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+/* ========= CURSOS ========= */
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+    text-align: left;
+}
+
+.module-item {
+    background: var(--dark-color-alt);
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color); 
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+}
+
+.module-item h3 {
+    color: var(--primary-color);
+    padding: 1.5rem 1.5rem 0;
+}
+
+.module-item p {
+    padding: 1rem 1.5rem;
+    margin: 0;
+}
+
+/* --- Vídeos Responsivos --- */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin-top: 1rem;
+    border-radius: 0 0 8px 8px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* --- CTA Final --- */
+.cursos-cta-final {
+    text-align: center;
+    margin-top: 4rem; 
+    padding: 2rem;
+    background-color: var(--dark-color-alt); 
+    border-radius: 8px;
+    border-top: 2px solid var(--primary-color);
+}
+
+/* ========= CONTATO ========= */
+.contact-info {
+    margin-top: 2rem;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    word-break: break-all;
+}
+
+.contact-info i { 
+    width: 30px; 
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+/* ========= RODAPÉ ========= */
+.main-footer {
+    background-color: var(--dark-color-alt);
+    text-align: center;
+    padding: 2.5rem 1rem;
+    border-top: 1px solid #333;
+    font-size: 0.9rem;
+    color: var(--text-color-muted);
+}
+
+/* ============================================================= */
+/* ========= AJUSTES PARA DESKTOP =============================== */
+/* ============================================================= */
+@media (min-width: 769px) {
+
+    body {
+        padding-top: var(--header-height-desktop);
+    }
+
+    /* HEADER FIXO CORRIGIDO */
+    .main-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: var(--header-height-desktop);
+        background-color: rgba(18, 18, 18, 0.95);
+        backdrop-filter: blur(10px);
+        border-bottom: 2px solid var(--primary-color);
+        z-index: 999;
+        display: flex;
+        align-items: center;
+    }
+
+    .main-header .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+    }
+
+    .logo {
+        margin: 0;
+        font-size: 1.8rem;
+        white-space: nowrap;
+    }
+
+    .main-nav ul {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .main-nav a {
+        font-size: 1rem;
+        padding: 10px 0;
+        color: var(--text-color);
+        text-decoration: none;
+    }
+
+    .main-nav a:hover {
+        color: var(--primary-color);
+    }
+
+    /* Seções maiores no desktop */
+    .content-section {
+        padding: 5rem 0;
+    }
+
+    h1, .hero h1 { font-size: 3.8rem; }
+    h2 { font-size: 2.5rem; margin-bottom: 2.5rem; }
+    h3 { font-size: 1.8rem; }
+    p { font-size: 1.1rem; }
+    .hero p { font-size: 1.3rem; }
+}

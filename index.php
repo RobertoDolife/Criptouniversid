@@ -1,0 +1,132 @@
+<?php include 'header.php'; ?>
+
+<section id="home" class="hero">
+    <div class="container">
+        <h1>Aprenda o futuro do dinheiro de forma simples e segura</h1>
+        <p>Descubra o mundo das criptomoedas com quem entende do assunto. Na CriptoFácil, acreditamos que aprender sobre criptomoedas não precisa ser complicado.</p>
+        <a href="#cursos" class="btn-cta">👉 Inscreva-se agora e comece sua jornada!</a>
+    </div>
+</section>
+
+<section id="sobre" class="content-section alt-bg">
+    <div class="container">
+        <h2>💡 Sobre Nós</h2>
+        <h3>Quem somos</h3>
+        <p>A CriptoFácil nasceu com o objetivo de democratizar o conhecimento sobre o mercado de criptomoedas. Sabemos que o tema pode parecer técnico e distante, por isso criamos um curso acessível, 100% online e voltado para iniciantes.</p>
+        <p>Nossa missão é ensinar de forma simples, prática e segura tudo o que você precisa saber para entrar no mundo das moedas digitais e entender como realizar suas próprias transações.</p>
+        
+        <div class="values-grid">
+            <div class="value-item">
+                <i class="fas fa-bullseye"></i>
+                <h4>Missão</h4>
+                <p>Tornar o aprendizado sobre criptomoedas acessível a todos.</p>
+            </div>
+            <div class="value-item">
+                <i class="fas fa-eye"></i>
+                <h4>Visão</h4>
+                <p>Ser referência em ensino digital sobre finanças e tecnologia.</p>
+            </div>
+            <div class="value-item">
+                <i class="fas fa-gem"></i>
+                <h4>Valores</h4>
+                <p>Educação, transparência, inovação e segurança.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="cursos" class="content-section">
+    <div class="container">
+        <h2>🎓 Nossos Cursos</h2>
+        
+        <div class="course-grid">
+            
+            <div class="module-item">
+                <h3>🔹 1 – Introdução ao Tema</h3>
+                <p>Nesta primeira parte, o aluno conhecerá o que são as criptomoedas, como surgiram e por que estão transformando o sistema financeiro mundial.</p>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/n1OSatwL-74" title="Vídeo introdutório" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="module-item">
+                <h3>🔹 2 – Carteiras Digitais</h3>
+                <p>Entenda o que são carteiras digitais (wallets), como elas funcionam e a diferença crucial entre "hot wallets" (online) e "cold wallets" (offline).</p>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/MWY__WATsPk" title="Carteiras Digitais" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="module-item">
+                <h3>🔹 4 – Caso de Uso: Stablecoins</h3>
+                <p>Descubra como as stablecoins (moedas estáveis) funcionam e por que elas são essenciais para transações internacionais e proteção contra volatilidade.</p>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/rJi325i6FkI" title="Análise de casos de uso" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="module-item">
+                <h3>🔹 5 – Atividade Interativa</h3>
+                <p>Para encerrar o curso, participe de um quiz divertido e educativo sobre o conteúdo aprendido para testar seu conhecimento.</p>
+                <a href="https://kahoot.it/challenge/07150210?challenge-id=75ecadae-562f-4caa-ac26-38fe9c9af5d1_1761760743622" target="_blank" class="btn-cta quiz-btn">Acessar o Quiz</a>
+            </div>
+
+        </div> <div class="cursos-cta-final">
+            <h3>Gostou? Quer ver mais vídeos e conteúdos?</h3>
+            <p>Siga nosso canal no YouTube para ter acesso a aulas extras, dicas e atualizações do mundo cripto!</p>
+            <a href="https://m.youtube.com/channel/UCn7q7VHk7qq1W3DrksZGnEA" target="_blank" class="btn-cta">
+                <i class="fab fa-youtube"></i> Acessar Canal no YouTube
+            </a>
+        </div>
+
+    </div> </section>
+
+<section id="equipe" class="content-section alt-bg">
+    <div class="container">
+        <h2><i class="fas fa-users"></i> Nossa Equipe</h2>
+        <p>Conheça as autoras responsáveis por este projeto.</p>
+        
+        <div class="team-grid">
+            
+            <div class="team-member">
+                <i class="fas fa-user-graduate"></i>
+                <h4>Geovanna Pedrique</h4>
+                <p>RA: 3022200841</p>
+            </div>
+            
+            <div class="team-member">
+                <i class="fas fa-user-graduate"></i>
+                <h4>Milene Bohomol</h4>
+                <p>RA: 3022202399</p>
+            </div>
+
+            <div class="team-member">
+                <i class="fas fa-user-graduate"></i>
+                <h4>Ísis Rosa</h4>
+                <p>RA: 3022202834</p>
+            </div>
+
+             <div class="team-member">
+                <i class="fas fa-user-graduate"></i>
+                <h4>Letícia Isabely Alves Gonçalves</h4>
+                <p>RA: 3022202291</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section id="contato" class="content-section">
+    <div class="container">
+        <h2>📞 Contato</h2>
+        <p>Quer saber mais sobre nossos cursos ou tirar dúvidas? Preencha o formulário ou fale com nossa equipe:</p>
+        
+        <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> E-mail: contato@criptofacil.com</p>
+            <p><i class="fab fa-whatsapp"></i> WhatsApp: (11) 99999-9999</p>
+            <p><i class="fas fa-map-marker-alt"></i> Endereço: Rua da Inovação, 100 – São Paulo/SP</p>
+        </div>
+        
+    </div>
+</section>
+
+<?php include 'footer.php'; ?>
